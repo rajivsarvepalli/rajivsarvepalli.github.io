@@ -1,6 +1,9 @@
-# Otilia Stretcu's personal webpage
+# Rajiv Sarveppali's personal webpage
 
-This is the personal website of Otilia Stretcu, which can be visualized at [https://otiliastr.github.io/](https://otiliastr.github.io/).
+This is the personal website of Rajiv Sarvepalli, which can visualized at [https://rajivsarvepalli.github.io/](https://rajivsarvepalli.github.io/).
+
+# Forked from https://otiliastr.github.io/
+This is forked from personal website of Otilia Stretcu, which can be visualized at https://otiliastr.github.io/.
 
 ## How to use this template for your website
 

@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Otilia Stretcu | Foreground Objects Discovery in Video</title>
-  <meta name="description" content="This is the personal website of Otilia Stretcu">
+  <title>Rajiv Sarvepalli | Social Media Privacy Tool</title>
+  <meta name="description" content="This is the personal website of Rajiv Sarvepalli">
 
   <!-- Fonts and Icons -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
@@ -14,14 +14,14 @@
   <link rel="stylesheet" href="/assets/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/projects/1_video/">
+  <link rel="canonical" href="/projects/2_livex/">
 </head>
 <body>
   <!-- Header -->
   <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
     <div class="container-fluid p-0">
       
-        <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Otilia</span> Stretcu</a>
+        <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Rajiv</span> Sarvepalli</a>
       
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -60,7 +60,7 @@
             
               <li class="nav-item ">
                   <a class="nav-link" href="/publications/">
-                    publications
+                    papers
                     
                   </a>
               </li>
@@ -92,18 +92,28 @@
   <!-- Content -->
   <div class="content">
     
-  <h1>Foreground Objects Discovery in Video</h1>
-  <h6>Computer Vision research on automatic discovery of foreground objects in videos.</h6>
+  <h1>Docker Container Scrapper</h1>
+  <h6>This tool collects interesting information about docker containers such as software versions. This is used for CVE analysis to understand docker security vulnerabilities.  
+  </h6>
 
 
-<p>Automatic discovery of foreground objects in video sequences is an important problem in computer vision with applications to object tracking, video segmentation and classification. We propose an efficient method for the discovery of object bounding boxes and the corresponding soft-segmentation masks across multiple video frames. We offer a graph matching formulation for bounding box selection and refinement using second and higher order terms. Our objective function takes into consideration local, frame-based information, as well as spatiotemporal and appearance consistency over multiple frames. First, we find an initial pool of candidate boxes using a novel and fast foreground estimation method in video, based on Principal Component Analysis. Then, we match the boxes across multiple frames using pairwise geometric and appearance terms. Finally, we refine their location and soft-segmentation using higher order potentials that establish appearance regularity over multiple frames. We test our method on the large scale YouTube-Objects dataset and obtain state-of-the-art results on several object classes.</p>
+<p><br /></p>
+
+<p>The concept is that many docker users leave old docker containers running for systems without updating them. Aditionally, many users leave both secrets and un-updated software inside docker container allowing for many exploits.
+  The result of this is a large number of vulnerabilities inside docker containers. On top of this many users build their docker image on base image whihc may pull from containers with outdated software resulting in many potential security issues.
+  To understand the extent of these issues, this software is used to anyalze containers in order to conduct a study on the overall docker hub container security. The data collected from this project can be applied to reseacrh study through data analysis
+  of the collected information. The code for this tool can be found here.</p>
+<p>This tool was developed for research under Yonghwi Kwon.  </p>
+
+<p><br /></p>
+
 
 
   </div>
 
   <!-- Footer -->
   <footer>
-    &copy; Copyright 2020 Otilia Stretcu.
+    &copy; Copyright 2020 Rajiv Sarvepalli.
     
     
   </footer>
