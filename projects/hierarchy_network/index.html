@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Rajiv Sarvepalli | teaching</title>
+  <title>Rajiv Sarvepalli | Hierarchy Networks </title>
   <meta name="description" content="This is the personal website of Rajiv Sarvepalli">
 
   <!-- Fonts and Icons -->
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/teaching/">
+  <link rel="canonical" href="/projects/2_livex/">
 </head>
 <body>
   <!-- Header -->
@@ -67,11 +67,9 @@
             
           
             
-              <li class="nav-item navbar-active font-weight-bold">
+              <li class="nav-item ">
                   <a class="nav-link" href="/teaching/">
                     teaching
-                    
-                      <span class="sr-only">(current)</span>
                     
                   </a>
               </li>
@@ -94,36 +92,28 @@
   <!-- Content -->
   <div class="content">
     
-  <h1>teaching</h1>
-  <h6>classes, workshops, and teaching material</h6>
+  <h1>Simple Hierarchy Networks with PyTorch</h1>
+  <h6>When looking at the task for classifying something where hierarchies were intrinsic to the classes, I searched for any libraries that might do very simple classification using grouped classes with hierarchies. However, I did not find any libraries that were suited for this relatively simple task. So I sought to create a more general solution that others can hopefully benefit from.
 
 
-<h3 class="mt-4">University of Virginia</h3>
+    The concept is quite simple: create general architecture for groupings of classes dependent on each other. So starting with a basic concept of model, I looked to make something in PyTorch that represented my idea.
+     
+  </h6>
 
-<div class="card mt-3">
-  <div class="p-3">
-    <div class="row">
-      <div class="col-sm-10">
-        <h5 class="font-weight-bold">Computer Architecture</h5>
-      </div>
-      <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle" href="https://www.cs.virginia.edu/~cr4bd/3330/F2020/" target="_blank">
-            CS-3330
-        </span>
-      </div>
-    </div>
-    <h6 class="font-italic mt-2 mt-sm-0">Fall 2020: Teaching Assistant</h6>
-    <ul class="card-text font-weight-light list-group list-group-flush">
-      <li class="list-group-item">○ Undergraduate course taught by <a href="https://engineering.virginia.edu/faculty/charles-reiss" target="_blank"><b>Prof. Charles Reiss</b></a></a>.</li>
-      <li class="list-group-item">○ Class covers material including but not limited to instruction set architectures; addressing modes; register transfer notation; processor design and computer arithmetic; memory systems; hardware implementations of virtual memory, and input/output control and devices.</li>
-      <li class="list-group-item">○ Provided weekly office hours for a Computer Architecture class with more than 300 students.</li>
-      <li class="list-group-item">○ Ran weekly laboratory sessions providing an overview and answering questions.</li>
-      <li class="list-group-item">○ Examined instructional material for understandability and clarity through reviewing assignment's overview and instructions.</li>
-      <li class="list-group-item">○ Course materials can be found <a href="https://www.cs.virginia.edu/~cr4bd/3330/F2020/" target="_blank">here</a> .</li>
 
-    </ul>
-  </div>
-</div>
+<p><br /></p>
+
+<p>Let us take an image geolocation problem where we want the location for city, county, and district. We will call these groupings a,b,c respectively. Given an image input, we want to predict all 3 classes but also need an architecture in which these relationships are properly represented. The network architecture below illustrates a possible solution (that this package will attempt to implement with a degree of adaptability).
+  The architecture can be visualized as so with an input image: </p>
+  <img class="img-fluid" src="/assets/img/network.svg" />
+
+<p> where the class hierarchy is like so</p>
+<img class="img-fluid" src="/assets/img/tree.svg" />
+
+  <p>The class hierarchy is a similar structure to an example within this package. Each node has a tuple of a named grouping and the number of classes within that grouping. This the reason for the sizes in the final outputs in the network architecture. The large green plus signs within circles are used to indicate concatenation of the two input (green arrowed lines) leading into them. This is why the sections for class b and c have input size 4096 + 1024 = 5120.</p>
+<p><br /></p>
+<p>In case others run into the same problem as me, I decided to post this code as a package on <a href="https://github.com/rajivsarvepalli/SimpleHierarchy" target="_blank"><b>GitHub</b></a> and <a href="https://pypi.org/project/simple-hierarchy-pytorch/" target="_blank"><b>PyPI</b></a>. It is available on my GitHub and also through python's pip module. Since it is on pip, it easily installable for anyone to use. Check out my <a href="https://github.com/rajivsarvepalli/SimpleHierarchy" target="_blank"><b>repository</b></a> on it for more information.</p>
+
 
 
 
