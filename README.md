@@ -1,4 +1,4 @@
-# Rajiv Sarveppali's personal webpage
+# Rajiv Sarvepalli's personal webpage
 
 This is the personal website of Rajiv Sarvepalli, which can visualized at [https://rajivsarvepalli.github.io/](https://rajivsarvepalli.github.io/).
 
