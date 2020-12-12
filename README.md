@@ -2,7 +2,7 @@
 
 This is the personal website of Rajiv Sarvepalli, which can visualized at [https://rajivsarvepalli.github.io/](https://rajivsarvepalli.github.io/).
 
-# Forked from https://otiliastr.github.io/
+# Forked from https://github.com/otiliastr/otiliastr.github.io
 This is forked from personal website of Otilia Stretcu, which can be visualized at https://otiliastr.github.io/.
 
 ## How to use this template for your website
