@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Rajiv Sarvepalli | projects</title>
+  <title>Rajiv Sarvepalli | Docker Scrapper</title>
   <meta name="description" content="This is the personal website of Rajiv Sarvepalli">
 
   <!-- Fonts and Icons -->
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/projects/">
+  <link rel="canonical" href="/projects/privacy/">
 </head>
 <body>
   <!-- Header -->
@@ -49,11 +49,9 @@
             
           
             
-              <li class="nav-item navbar-active font-weight-bold">
+              <li class="nav-item ">
                   <a class="nav-link" href="/projects/">
                     projects
-                    
-                      <span class="sr-only">(current)</span>
                     
                   </a>
               </li>
@@ -94,105 +92,28 @@
   <!-- Content -->
   <div class="content">
     
-  <h1>Projects</h1>
-  <h6>some of the projects I have worked on</h6>
+  <h1>Warframe Trader</h1>
+  <h6>This <a href="https://rajivsarvepalli.pythonanywhere.com" target="_blank">project</a> is designed to perform basic market anyalsis on the market for in-game items for the video-game <a href="https://www.warframe.com/" target="_blank">Warframe</a>. This project extends market anyalsis
+    from the data provided by the <a href="https://warframe.market/" target="_blank">warframe.market</a> API, a website for listing the in-game items on Warframe. I built this project in order to get some basic front-end experience and also as a fun way to learn market indicators.
+  </h6>
 
 
-<div id="projects" class="row mt-2 pt-3" style="overflow: visible !important;">
-    <div class="project-card">
-        
-      <a href="/projects/hierarchy_network/">
-    
-      <div class="card">
-        <img class="card-img-top" src="/assets/img/hierarchy.png" alt="project thumbnail" />
-        <div class="card-body">
-          <h5 class="card-title text-lowercase">PyTorch Hierarchal Networks</h5>
-          <p class="card-text">A python package to easily build simple hierarchal PyTorch networks for classification tasks. The question is when there is an inherent grouping of classes that leads to a hierarchical structure, how do we build a simple network to classify?</p>
-          <div class="row ml-1 mr-1 p-0">
-            
-            
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-  
-    <div class="project-card">
-      
-        <a href="/projects/privacy/">
-      
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/Anonymous_Social_Media.png" alt="project thumbnail" />
-          <div class="card-body">
-            <h5 class="card-title text-lowercase">Image-Caption Geolocation for Privacy</h5>
-            <p class="card-text">Anyalzing the text &amp; image content in a social media type of post to find locality based information in order to identify senstive information about an indivudal. Warns an individual about the potential information leak. </p>
-            <div class="row ml-1 mr-1 p-0">
-              
-              
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="project-card">
-      
-      <a href="/projects/mock_alchemy/">
-    
-      <div class="card">
-        <!-- credit to https://www.freepik.com/ for the alchemy image-->
-        <img class="card-img-top" src="/assets/img/alchemy.svg" alt="project thumbnail" />
-        <div class="card-body">
-          <h5 class="card-title text-lowercase">mock-alchemy</h5>
-          <p class="card-text">The python package mock_alchemy is an open-source, MIT-licensed library providing a simple method of mocking SQLAlchemy sessions and gives the ability to do sane asserts. It enables easy unittests for testing SQLAlchemy session objects and more. </p>
-          <div class="row ml-1 mr-1 p-0">
-            
-            
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
+<p><br /></p>
 
-    
+<p> The idea was to provided Warframe players with the ability to view market trends of items and also to be able to make predictions for whether prices will go up or down. Additionally, this project includes some basic price predictions for some of the in-game items. The database collected for this website is served from a free firebase database. The <a href="https://rajivsarvepalli.pythonanywhere.com/about" target="_blank">about page</a> of the project's public website shares more information.
+</p>
+<p>
+    The code for the front-end website is open-source and available on <a href="https://github.com/rajivsarvepalli/warframe-trader" target="_blank">GitHub</a>. This is built around accessing the firebase database and serving the data processed and recorded there.
+    Aditionally, the package for processing and doing the data anyalsis is also available as an open-source <a href="https://pypi.org/project/warframe-metrics/" target="_blank">PyPI package</a>.   
+  </p>
+<p>Below is a the front-page for the website.</p>
+<a href="https://rajivsarvepalli.pythonanywhere.com/">
+  <img src="/assets/img/trader.PNG" alt="Warframe Trader" style="width:35vw;height:35vh;">
+</a>
 
-</div>
-<div id="projects" class="row mt-2 pt-3" style="overflow: visible !important;">
-  <div class="project-card">
-      
-    <a href="/projects/warframe/">
-  
-    <div class="card">
-      <img class="card-img-top" src="/assets/img/lotusIcon.jpg" alt="project thumbnail" />
-      <div class="card-body">
-        <h5 class="card-title text-lowercase">Warframe Trader</h5>
-        <p class="card-text">Accumulates data from a market for in-game items from a video game. The data is then analyzed for market trends and basic predictions are made to guess the best items to sell or buy for maximal profit gains. Additionally, typical stock indicators are plotted for market analysis.</p>
-        <div class="row ml-1 mr-1 p-0">
-          
-          
-        </div>
-      </div>
-    </div>
-  </a>
-  </div>
-  <div class="project-card">
-      
-    <a href="/projects/docker/">
-  
-    <div class="card">
-      <img class="card-img-top" src="/assets/img/dockerhub.png" alt="project thumbnail" />
-      <div class="card-body">
-        <h5 class="card-title text-lowercase">Docker Container Scrapper</h5>
-        <p class="card-text">Collects interesting information about docker containers such as software versions. This is used for CVE analysis to understand docker security vulnerabilities. The data collected using this tool can be subjected to various forms of data analysis.</p>
-        <div class="row ml-1 mr-1 p-0">
-          
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
+<p><br /></p>
 
-</div>
+
 
   </div>
 
